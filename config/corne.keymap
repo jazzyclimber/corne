@@ -68,10 +68,10 @@
             //                                 |     |     |     |   | RCMD  | LALT  |       |
 
             bindings = <
-&kp ESCAPE      &kp EXCLAMATION  &kp PERCENT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans    &trans             &trans        &trans        &trans     &trans  &trans
-&trans          &kp AT_SIGN      &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans    &trans             &trans        &kp UP_ARROW  &trans     &trans  &trans
-&kp LEFT_SHIFT  &trans           &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans    &trans             &kp LEFT      &kp DOWN      &kp RIGHT  &trans  &trans
-                                              &trans                &trans                 &trans    &kp RIGHT_COMMAND  &kp LEFT_ALT  &trans
+&kp ESCAPE      &kp EXCLAMATION  &kp PERCENT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &mt LEFT_COMMAND NUMBER_4    &trans             &trans        &trans        &trans     &trans  &trans
+&trans          &kp AT_SIGN      &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                       &trans             &trans        &kp UP_ARROW  &trans     &trans  &trans
+&kp LEFT_SHIFT  &trans           &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans                       &trans             &kp LEFT      &kp DOWN      &kp RIGHT  &trans  &trans
+                                              &trans                &trans                 &trans                       &kp RIGHT_COMMAND  &kp LEFT_ALT  &trans
             >;
         };
 
