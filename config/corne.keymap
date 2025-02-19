@@ -38,10 +38,10 @@
             //                      | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp N5                     &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
-&kp LCTRL  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3               &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
-&kp ESC    &trans      &trans        &kp PG_UP     &kp PG_DN     &kp END                    &trans    &trans    &trans    &trans     &trans  &trans
-                                     &kp LGUI      &trans        &kp SPACE    &kp RET   &trans    &kp RALT
+&kp TAB    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp N5          &kp N6    &kp N7    &kp N8    &kp N9     &kp N0  &kp BSPC
+&kp LCTRL  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3    &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT  &trans  &trans
+&kp ESC    &trans      &trans        &kp PG_UP     &kp PG_DN     &kp END         &trans    &trans    &trans    &trans     &trans  &trans
+                                     &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
             >;
         };
 
@@ -53,10 +53,10 @@
             //                                 | GUI |     | SPC |   | ENT   |       | ALT   |
 
             bindings = <
-&kp TAB    &kp EXCL         &kp AT           &kp HASH         &kp DLLR         &kp PRCNT                  &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
-&kp LCTRL  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &trans                     &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &bootloader                &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                             &kp LGUI         &trans           &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB    &kp EXCL         &kp AT           &kp HASH         &kp DLLR         &kp PRCNT      &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC
+&kp LCTRL  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &trans         &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LSHFT  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &bootloader    &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                             &kp LGUI         &trans           &kp SPACE      &kp RET    &trans     &kp RALT
             >;
         };
 
@@ -68,7 +68,7 @@
             //                                 |     |     |     |   | RCMD  | LALT  |       |
 
             bindings = <
-&kp ESCAPE      &kp EXCLAMATION  &kp PERCENT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RG(NUMBER_4)    &trans             &kp LESS_THAN  &kp SLASH     &kp GREATER_THAN  &trans  &trans
+&kp ESCAPE      &kp EXCLAMATION  &kp PERCENT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RG(NUMBER_4)    &kp EXCLAMATION    &kp LESS_THAN  &kp SLASH     &kp GREATER_THAN  &trans  &trans
 &trans          &kp AT_SIGN      &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans              &trans             &kp MINUS      &kp UP_ARROW  &kp UNDER         &trans  &trans
 &kp LEFT_SHIFT  &trans           &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp LG(NUMBER_2)    &trans             &kp LEFT       &kp DOWN      &kp RIGHT         &trans  &trans
                                               &trans                &trans                 &trans              &kp RIGHT_COMMAND  &kp LEFT_ALT   &trans
