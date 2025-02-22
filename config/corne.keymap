@@ -12,6 +12,15 @@
 &led_strip { chain-length = <27>; };
 
 / {
+    macros {
+        backWord: delete_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(LEFT)>;
+            label = "DELETE_WORD";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -24,7 +33,7 @@
 
             bindings = <
 &kp TAB    &kp Q  &kp W  &kp E  &kp R             &kp T    &kp Y            &kp U      &kp I      &kp O    &kp P     &kp BSPC
-&kp GRAVE  &kp A  &kp S  &kp D  &kp F             &kp G    &kp H            &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&none      &kp A  &kp S  &kp D  &kp F             &kp G    &kp H            &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V             &kp B    &kp N            &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                          &mo 3  &kp LEFT_COMMAND  &mo 4    &kp RIGHT_SHIFT  &kp SPACE  &kp ENTER
             >;
@@ -68,10 +77,10 @@
             //                                 |     |     |     |   | RCMD  | LALT  |       |
 
             bindings = <
-&kp ESCAPE      &kp EXCLAMATION  &kp PERCENT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RG(NUMBER_4)    &kp EXCLAMATION    &kp LESS_THAN  &kp SLASH     &kp GREATER_THAN  &trans  &trans
-&trans          &kp AT_SIGN      &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(C)           &trans             &kp MINUS      &kp UP_ARROW  &kp UNDER         &trans  &trans
-&kp LEFT_SHIFT  &trans           &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none               &trans             &kp LEFT       &kp DOWN      &kp RIGHT         &trans  &trans
-                                              &trans                &trans                 &trans              &kp RIGHT_COMMAND  &kp LEFT_ALT   &trans
+&kp ESCAPE      &kp AT     &kp PERCENT  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp RG(NUMBER_4)    &kp EXCLAMATION    &kp LESS_THAN  &kp SLASH          &kp GREATER_THAN  &none          &kp RA(BACKSPACE)
+&none           &kp PIPE   &kp DOLLAR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LC(C)           &none              &kp LA(LEFT)   &kp UP_ARROW       &kp LA(RIGHT)     &kp BACKSLASH  &none
+&kp LEFT_SHIFT  &kp GRAVE  &none        &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none               &none              &kp LEFT       &kp DOWN           &kp RIGHT         &none          &none
+                                        &none                 &none                  &none               &kp RIGHT_COMMAND  &kp LEFT_ALT   &kp RIGHT_CONTROL
             >;
         };
 
@@ -83,10 +92,19 @@
             //                              |     |     |    |   |      |  0  |     |
 
             bindings = <
-&trans  &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &trans                 &kp EXCLAMATION  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK          &trans
-&trans  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &kp LA(LEFT_ARROW)     &trans           &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS              &kp MINUS
-&trans  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &kp LA(RIGHT_ARROW)    &trans           &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp NON_US_BACKSLASH  &trans
-                                          &trans           &trans           &trans                 &trans           &kp KP_NUMBER_0  &trans
+&none  &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &none                  &kp EXCLAMATION  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK          &none
+&none  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &kp LA(LEFT_ARROW)     &kp PERCENT      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS              &kp MINUS
+&none  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &kp LA(RIGHT_ARROW)    &none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp NON_US_BACKSLASH  &none
+                                         &none            &none            &none                  &none            &kp KP_NUMBER_0  &none
+            >;
+        };
+
+        Numpad_new {
+            bindings = <
+&kp ESCAPE  &none  &none  &none  &none  &none    &kp EXCLAMATION  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK          &kp LA(BACKSPACE)
+&none       &none  &none  &none  &none  &none    &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS              &kp MINUS
+&none       &none  &none  &none  &none  &none    &none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp NON_US_BACKSLASH  &none
+                          &none  &none  &none    &none            &kp KP_NUMBER_0  &none
             >;
         };
     };
