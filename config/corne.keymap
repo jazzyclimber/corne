@@ -42,7 +42,7 @@
 &kp TAB    &kp Q  &kp W  &kp E  &kp R             &kp T    &kp Y            &kp U      &kp I      &kp O    &kp P     &kp BSPC
 &tog 4     &kp A  &kp S  &kp D  &kp F             &kp G    &kp H            &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C  &kp V             &kp B    &kp N            &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                         &mo 3  &kp LEFT_COMMAND  &mo 4    &kp RIGHT_SHIFT  &kp SPACE  &kp ENTER
+                         &mo 3  &kp LEFT_COMMAND  &mo 5    &kp RIGHT_SHIFT  &kp SPACE  &kp ENTER
             >;
         };
 
@@ -99,10 +99,10 @@
             //                              |     |     |    |   |      |  0  |     |
 
             bindings = <
-&none  &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &none    &none  &none  &none  &none  &none  &none
-&none  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &none    &none  &none  &none  &none  &none  &none
-&none  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &none    &none  &none  &none  &none  &none  &none
-                                         &none            &none            &none    &none  &none  &none
+&none   &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &none    &none  &none  &none  &none  &none  &none
+&trans  &rgb_ug RGB_TOG  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &none    &none  &none  &none  &none  &none  &none
+&none   &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &none    &none  &none  &none  &none  &none  &none
+                                          &none            &none            &none    &none  &none  &none
             >;
         };
 
