@@ -108,10 +108,10 @@
 
         Numpad_new {
             bindings = <
-&kp ESCAPE  &equalsQuote  &none  &none  &none  &kp LG(NUMBER_4)    &kp EXCLAMATION  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK          &kp LA(BACKSPACE)
-&none       &Arrow        &none  &none  &none  &kp LC(C)           &kp PERCENT      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS              &kp MINUS
-&none       &none         &none  &none  &none  &kp LC(UP_ARROW)    &none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp NON_US_BACKSLASH  &none
-                                 &none  &none  &none               &none            &kp KP_NUMBER_0  &none
+&kp ESCAPE  &equalsQuote  &none         &none             &none          &kp LG(NUMBER_4)    &kp EXCLAMATION  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK          &kp LA(BACKSPACE)
+&none       &Arrow        &kp LC(LEFT)  &kp LC(UP_ARROW)  &kp LC(RIGHT)  &kp LC(C)           &kp PERCENT      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS              &kp MINUS
+&none       &none         &none         &none             &none          &kp LA(LG(C))       &none            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp NON_US_BACKSLASH  &none
+                                        &none             &none          &none               &none            &kp KP_NUMBER_0  &none
             >;
         };
     };
